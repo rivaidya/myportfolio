@@ -12,13 +12,25 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://kit.fontawesome.com/1cccdabaa4.js" crossorigin="anonymous"></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152362738-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-152362738-1');
+</script>
+
    </head>
 
 
 <body>
   <!-- Header -->
   <header> 
-    <a href="#main_image" class="skipcont">Skip to Main Content</a>
+    <a href="#about" class="skipcont">Skip to Main Content</a>
 
     <!-- Navigation -->
     <nav class="nav" layout="row top-left">
@@ -39,7 +51,7 @@
           <div class="element">
             <a href="index.html">Back to Portfolio</a>
           </div>
-          <div class="current element">
+          <div class="currentelement">
             <a href="#">About</a>
           </div>
         </div>
@@ -55,7 +67,7 @@
      <!-- Main Conbtent -->
   <main class="container">
       <section class="row">
-        <img src="images/about/profile.jpeg" class="image" alt="Riddhi Vaidya" id="main_image" style="visibility: visible;">
+        <img src="images/about/profile.jpeg" class="image" alt="Riddhi Vaidya Profile" id="main_image" style="visibility: visible;">
         <section class="infoabout" id="about" style="visibility: visible;">
           <p>Currently I am a masters student at School of Information at University of Michigan. 
           I am endlessly curious user experience designer. I speak for user needs through researching, designing and implementing an output that reflects strong understanding of UX principles.
@@ -69,6 +81,45 @@
           </p>
         </section>
       </section>
+  <form class="form-horizontal" action="https://formspree.io/xpzzrerk" method="post">
+    <fieldset>
+        <legend class="text-center header"><h3>Want to work together? Contact me!</h3></legend>
+
+        <div class="form-group">
+            <span><i class="fa fa-user bigicon"></i></span>
+            <div>
+                <input id="lname" name="name" type="text" placeholder="Name" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <span><i class="fa fa-paper-plane bigicon"></i></span>
+            <div>
+                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <span><i class="fa fa-phone-square bigicon"></i></span>
+            <div>
+                <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <span><i class = "fas fa-pencil-alt bigicon"></i></span>
+            <div>
+                <textarea class="form-control" id="message" name="message" placeholder="Leave your message for me!"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+  </form>
   </main> 
       <!-- Footer -->
   <footer role="footer" class="footer">
@@ -81,7 +132,7 @@
 
                   <li><a href="index.html" title="Work" class="element">Work</a></li>
 
-                    <li><a href="about.html" title="About" class="current element"> About</a></li>
+                    <li><a href="about.html" title="About" class="currentelement"> About</a></li>
 
 
                 </ul>
@@ -92,11 +143,11 @@
             <div class="footer-sm">
             <ul role="social-icons" class="sm">
 
-                <li><a href="https://www.instagram.com/riddhivaidya5/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/riddhivaidya5/" target="_blank"><i class="fab fa-instagram" aria-label="Riddhi Vaidya instagram"></i></a></li>
 
-                <li><a href="https://www.linkedin.com/in/riddhivaidya" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/riddhivaidya" target="_blank"><i class="fab fa-linkedin" aria-label="Riddhi Vaidya linkedin"></i></a></li>
 
-                <li><a href="UXDesigner_Resume.pdf" target="_blank"><i class="far fa-file-pdf" aria-hidden="true"></i></a></li>
+                <li><a href="UXDesigner_Resume.pdf" target="_blank"><i class="far fa-file-pdf" aria-label="Riddhi Vaidya Resume"></i></a></li>
 
             </ul>
             </div>

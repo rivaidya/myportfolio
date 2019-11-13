@@ -1,12 +1,12 @@
-
+/* Skip to content*/
+  
   a.skipcont{
-    /*background: white;*/
-    /*left: -100px;*/
+   
     padding: 6px;
     position: absolute;
     top: -44px;
-    -webkit-transition: initial;/* Your code here - set to default setting --done*/
-    transition: initial;/* Your code here - set to default setting --done*/
+    -webkit-transition: initial;
+    transition: initial;
     z-index: -999;
     overflow: hidden;
   }
@@ -20,16 +20,10 @@
   background-color: #f1f1f1;
   overflow: auto;
   }
-a {
-  text-decoration: none;}         /* Unvisited link  */
-a:visited {color:#333333;}     
-a:hover {color:#0000ff;}   /* Mouse over link */
 
 
-a.currentelement{
-  color: red;
-}
 
+/*Major body elements and styling*/
 html{
   scroll-behavior: smooth;
 }
@@ -69,12 +63,22 @@ h3{
 p{
   padding: 20px 0;
 }
-/*.nav{
-height: 66px;
-background-color: rgba(255, 255, 255, .85);
-position: fixed;
-padding-top: 2px;
-}*/
+
+/*Links styling*/
+a {
+  text-decoration: none;}         /* Unvisited link  */
+a {color:#333333;}     
+
+a:hover {color:#0000ff;}   /* Mouse over link */
+
+/*Navigation bar styling*/
+.currentelement{
+  text-decoration: underline;
+  color: #cc0000;
+}
+.element{
+  text-decoration: none;
+}
 .nav{
   display: flex;
   align-items: flex-start;
@@ -111,11 +115,14 @@ padding-top: 2px;
   display:inline-block;
   padding: 18px;
 }
+
+/*Main content of page*/
 .container{
   margin: 0, auto;
   padding:0;
 }
 
+/*Landing page*/
 .myintro{
   margin: 5em, 0, 5em, 0;
   padding: 40px 30px;
@@ -124,6 +131,33 @@ padding-top: 2px;
   padding: 5px, 0;
 }
 
+/*About page*/
+#main_image{
+  width: 100%
+
+}
+.header {
+        color: #003366;
+        font-size: 27px;
+        padding: 10px;
+        }
+
+ .bigicon {
+    font-size: 35px;
+    color: #003366;
+    padding-left:2%;
+        }
+  form div{
+      display:inline-block;
+      width: 90%;
+        }
+  button.btn{            
+      display: block;
+      margin: 0 auto;
+      font-size: 20px;
+        }
+
+/*Yoga design page*/
 .yogabanner{
   background-attachment: fixed; /* Parallax effect */
   background-image: url(../images/yoga/parallax.png);      /* Your code here - Link to header.jpg in the images folder */
@@ -134,7 +168,6 @@ padding-top: 2px;
   height: 400px;                /* Parallax effect */
   grid-column:1/-1;
   grid-row:2/3;
-    /*Your code here - cover the entire row*/
 }
 
 .yogabanner h2{
@@ -148,12 +181,16 @@ padding-top: 2px;
   text-align: center;
 }
 
+  .yoga-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%
+
+  }
 
 
-#main_image{
-  width: 100%
-
-}
+/*Photo gallery*/
 .spleffect{
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   font-size: 100%;
@@ -196,6 +233,22 @@ padding-top: 2px;
       -28px 56px 1px #e4e3e2;
 }
 
+.gallery{
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+            justify-content: center;
+    min-height: 200px;
+}
+ .gallery > img{
+    border: 5px #000000 solid;
+    margin: 10px;
+    width: 300px;
+  }
+
 /*Mobile view*/
 @media only screen and (max-width: 570px) {
 .nav-ifNotMobile{
@@ -213,17 +266,9 @@ section.infoabout{
   order: 2;
   padding: 0, 2em, 0, 2em;
 }
-}
-/*Tablet view*/
-@media only screen and (min-width: 571px){
-.nav-ifMobile{
-  display: none;
-}
-.logo-ifMobile{
-  display: none;
-}
 
-  #projects{
+/*Card styling*/
+ #projects{
     min-height: 500px;
     display: -webkit-box;
     display: flex;
@@ -233,11 +278,84 @@ section.infoabout{
     -webkit-box-align: center;
             align-items: center;
   }
+
+.card-body{
+  flex-basis: 400px;
+    margin: 12px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 0 0 50px 0;
+}
+.card-image{
+    background: #f2f2f2;
+    border: 2px solid black;
+    padding: 20px 0;
+    border-radius: 7px 7px 0 0;
+}
+.card-name{
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+}
+.card-description{
+  font-size: 0.75em;
+    color: black;
+    text-align: center;
+}
+}
+
+/*Tablet view*/
+@media only screen and (min-width: 571px){
+.nav-ifMobile{
+  display: none;
+}
+.logo-ifMobile{
+  display: none;
+}
+
+ 
   #main_image{
   order: 2;
+  padding-top: 2%;
 }
 section.infoabout{
   order: 1;
+}
+
+/*cards*/
+ #projects{
+    min-height: 500px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+.card-body{
+  flex-basis: 250px;
+    margin: 12px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 0 0 50px 0;
+}
+.card-image{
+    background: #f2f2f2;
+    border: 2px solid black;
+    padding: 20px 0;
+    border-radius: 7px 7px 0 0;
+}
+.card-name{
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+}
+.card-description{
+  font-size: 0.75em;
+    color: black;
+    text-align: center;
 }
 }
 
@@ -253,41 +371,47 @@ section.infoabout{
     flex: 0,0,50%;
     max-width: 50%;
     order: 2;
+    padding-top: 2%;
   }
-
 section.infoabout{
   order: 1;
 }
-}
-.gallery{
+/*cards*/
+ #projects{
+    min-height: 500px;
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
-    -webkit-box-align: start;
-            align-items: flex-start;
     -webkit-box-pack: center;
             justify-content: center;
-    min-height: 200px;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+.card-body{
+  flex-basis: 250px;
+    margin: 12px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 0 0 50px 0;
 }
- .gallery > img{
-    border: 5px #000000 solid;
-    margin: 10px;
-    width: 300px;
-  }
-
-  /*.yoga-card-container{;
-    height: 400px;
-    width: 50px;
-    display: table;
-  }*/
-
-  .yoga-card{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 100%
-
-  }
+.card-image{
+    background: #f2f2f2;
+    border: 2px solid black;
+    padding: 20px 0;
+    border-radius: 7px 7px 0 0;
+}
+.card-name{
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+}
+.card-description{
+  font-size: 0.75em;
+    color: black;
+    text-align: center;
+}
+}
 
 
 /*footer*/
@@ -320,7 +444,8 @@ margin: 20px, 0;
   align-items: center;
   color: black;
 }
+
 @media screen and (prefers-reduced-motion:reduce){
   html{
-       scroll-behavior: auto;/* Removes scroll animation --done */
+       scroll-behavior: auto;/* Removes scroll animation */
   }
