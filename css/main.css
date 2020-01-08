@@ -60,7 +60,7 @@ h3{
   padding-top: 30px;
 }
 
-.side-two{
+.card{
 -webkit-tap-highlight-color: transparent;
 breakpoint-xs: 0;
 breakpoint-sm: 576px;
@@ -71,7 +71,6 @@ font-family: sans-serif;
 font_size: 16px;
 text-align: left;
 visibility: visible;
-color: blue;
 box-sizing: border-box;
 margin: 0;
 padding: 0;
